@@ -1,1 +1,3 @@
-print("hello")
+from src.cnnClassifier import logger
+
+logger.info("hello")

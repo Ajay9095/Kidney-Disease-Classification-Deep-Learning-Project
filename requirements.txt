@@ -1,4 +1,4 @@
-tensorflow==2.13
+tensorflow==2.16.1
 pandas
 dvc
 mlflow==2.12.2
