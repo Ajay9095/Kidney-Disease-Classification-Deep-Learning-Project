@@ -88,3 +88,212 @@ x========x]
 [2024-05-29 18:29:55,231: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
 
 x========x]
+[2024-05-29 20:27:41,196: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:27:41,226: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:27:41,236: INFO: common: created directory at: artifacts]
+[2024-05-29 20:30:18,001: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:30:18,008: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:30:18,011: INFO: common: created directory at: artifacts]
+[2024-05-29 20:31:06,702: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:31:06,708: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:31:06,710: INFO: common: created directory at: artifacts]
+[2024-05-29 20:31:38,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:31:38,738: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:31:38,742: INFO: common: created directory at: artifacts]
+[2024-05-29 20:33:03,610: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:33:03,616: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:33:03,619: INFO: common: created directory at: artifacts]
+[2024-05-29 20:34:15,598: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:34:15,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:34:15,610: INFO: common: created directory at: artifacts]
+[2024-05-29 20:35:00,617: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:35:00,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:35:00,627: INFO: common: created directory at: artifacts]
+[2024-05-29 20:36:48,203: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:36:48,210: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:36:48,213: INFO: common: created directory at: artifacts]
+[2024-05-29 20:36:48,215: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:38:42,977: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:38:42,985: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:38:42,988: INFO: common: created directory at: artifacts]
+[2024-05-29 20:38:42,990: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:41:50,036: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:41:50,043: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:41:50,046: INFO: common: created directory at: artifacts]
+[2024-05-29 20:41:50,049: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:42:33,751: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:42:33,758: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:42:33,762: INFO: common: created directory at: artifacts]
+[2024-05-29 20:42:33,768: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:44:58,240: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:44:58,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:44:58,250: INFO: common: created directory at: artifacts]
+[2024-05-29 20:44:58,253: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:49:51,198: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:49:51,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:49:51,207: INFO: common: created directory at: artifacts]
+[2024-05-29 20:49:51,210: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:51:27,459: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:51:27,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:51:27,469: INFO: common: created directory at: artifacts]
+[2024-05-29 20:51:27,471: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:51:28,856: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-29 20:55:12,899: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 20:55:12,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 20:55:12,916: INFO: common: created directory at: artifacts]
+[2024-05-29 20:55:12,921: INFO: common: created directory at: artifacts\training]
+[2024-05-29 20:55:14,062: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-29 21:06:22,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 21:06:22,145: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 21:06:22,148: INFO: common: created directory at: artifacts]
+[2024-05-29 21:06:22,151: INFO: common: created directory at: artifacts\training]
+[2024-05-29 21:06:24,118: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-29 21:10:02,933: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-29 21:10:02,973: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-29 21:10:02,985: INFO: common: created directory at: artifacts]
+[2024-05-29 21:10:02,999: INFO: common: created directory at: artifacts\training]
+[2024-05-29 21:10:05,739: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-29 21:13:40,373: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 00:35:14,075: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 00:35:14,097: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 00:35:14,106: INFO: common: created directory at: artifacts]
+[2024-05-30 00:35:14,109: INFO: common: created directory at: artifacts\training]
+[2024-05-30 00:35:15,704: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-30 00:44:42,276: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:11:31,761: INFO: main: ******************]
+[2024-05-30 01:11:31,763: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-05-30 01:11:31,766: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:11:31,770: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:11:31,771: INFO: common: created directory at: artifacts]
+[2024-05-30 01:11:31,772: INFO: common: created directory at: artifacts\training]
+[2024-05-30 01:11:33,378: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-30 01:11:55,426: ERROR: main: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 79, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>
+[2024-05-30 01:28:45,970: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-05-30 01:28:45,974: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:28:45,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:28:45,979: INFO: common: created directory at: artifacts]
+[2024-05-30 01:28:45,980: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-30 01:28:45,981: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=drive_link into the artifacts/data_ingestion/data.zip]
+[2024-05-30 01:28:56,842: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-05-30 01:28:59,093: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-05-30 01:28:59,094: INFO: main: ******************]
+[2024-05-30 01:28:59,094: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-05-30 01:28:59,100: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:28:59,104: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:28:59,105: INFO: common: created directory at: artifacts]
+[2024-05-30 01:28:59,106: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-30 01:29:00,486: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:29:00,915: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:29:01,182: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-05-30 01:29:01,182: INFO: main: ******************]
+[2024-05-30 01:29:01,183: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-05-30 01:29:01,192: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:29:01,198: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:29:01,200: INFO: common: created directory at: artifacts]
+[2024-05-30 01:29:01,203: INFO: common: created directory at: artifacts\training]
+[2024-05-30 01:29:01,690: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-30 01:29:20,042: ERROR: main: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 38, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 79, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>
+[2024-05-30 01:43:19,845: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-05-30 01:43:19,849: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:43:19,851: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:43:19,853: INFO: common: created directory at: artifacts]
+[2024-05-30 01:43:19,854: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-30 01:43:19,855: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=drive_link into the artifacts/data_ingestion/data.zip]
+[2024-05-30 01:43:30,566: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-05-30 01:43:32,661: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-05-30 01:43:32,662: INFO: main: ******************]
+[2024-05-30 01:43:32,662: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-05-30 01:43:32,669: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:43:32,674: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:43:32,675: INFO: common: created directory at: artifacts]
+[2024-05-30 01:43:32,677: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-30 01:43:33,972: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:43:34,402: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:43:34,683: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-05-30 01:43:34,684: INFO: main: ******************]
+[2024-05-30 01:43:34,684: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-05-30 01:43:34,693: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:43:34,699: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:43:34,700: INFO: common: created directory at: artifacts]
+[2024-05-30 01:43:34,703: INFO: common: created directory at: artifacts\training]
+[2024-05-30 01:43:35,361: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-30 01:43:52,746: ERROR: main: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 38, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 79, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>
+[2024-05-30 01:45:08,645: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-05-30 01:45:08,648: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:45:08,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:45:08,651: INFO: common: created directory at: artifacts]
+[2024-05-30 01:45:08,652: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-30 01:45:08,653: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=drive_link into the artifacts/data_ingestion/data.zip]
+[2024-05-30 01:45:19,693: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-05-30 01:45:21,558: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-05-30 01:45:21,559: INFO: main: ******************]
+[2024-05-30 01:45:21,559: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-05-30 01:45:21,565: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:45:21,569: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:45:21,570: INFO: common: created directory at: artifacts]
+[2024-05-30 01:45:21,576: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-30 01:45:22,445: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:45:22,707: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:45:22,866: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-05-30 01:45:22,867: INFO: main: ******************]
+[2024-05-30 01:45:22,867: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-05-30 01:45:22,873: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-30 01:45:22,875: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-30 01:45:22,876: INFO: common: created directory at: artifacts]
+[2024-05-30 01:45:22,877: INFO: common: created directory at: artifacts\training]
+[2024-05-30 01:45:23,265: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-30 01:47:57,003: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-05-30 01:47:57,391: INFO: main: >>>>>> stage model training completed <<<<<<<
+
+x========x]
