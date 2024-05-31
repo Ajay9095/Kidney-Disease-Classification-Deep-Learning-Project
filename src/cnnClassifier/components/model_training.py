@@ -6,6 +6,7 @@ import time
 from pathlib import Path
 from cnnClassifier.entity.config_entity import TrainingConfig
 
+
 class Training:
     def __init__(self, config: TrainingConfig):
         self.config = config
@@ -66,6 +67,7 @@ class Training:
 
 
     def train(self):
+
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
 
@@ -74,7 +76,7 @@ class Training:
 
         # Compile the model with the new optimizer
         self.model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
-
+        
 
         self.model.fit(
             self.train_generator,
@@ -89,3 +91,5 @@ class Training:
             path=self.config.trained_mode_path,
             model=self.model
         )
+
+

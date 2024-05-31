@@ -59,13 +59,11 @@ class Evaluation:
                 {"loss": self.score[0], "accuracy": self.score[1]}
             )
 
-            pip_requirements = ["keras==3.3.3", "tensorflow==your_tensorflow_version"] 
-
             if tracking_url_type_store != "file":
 
-                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model", pip_requirements=pip_requirements)
+                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
             else:
-                mlflow.keras.log_model(self.model, "model", pip_requirements=pip_requirements)
+                mlflow.keras.log_model(self.model, "model")
 
 
     

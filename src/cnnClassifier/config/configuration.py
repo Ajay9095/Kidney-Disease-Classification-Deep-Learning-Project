@@ -34,9 +34,9 @@ class ConfigurationManager:
     
     def get_prepare_base_model_config(self) -> PrepareBaseModelConfig:
         config = self.config.prepare_base_model
-
+        
         create_directories([config.root_dir])
-
+    
         prepare_base_model_config = PrepareBaseModelConfig(
             root_dir=Path(config.root_dir),
             base_mode_path=Path(config.base_model_path),
@@ -84,6 +84,8 @@ class ConfigurationManager:
             params_batch_size=self.params.BATCH_SIZE
         )
         return eval_config
+    
+
     
 
 
