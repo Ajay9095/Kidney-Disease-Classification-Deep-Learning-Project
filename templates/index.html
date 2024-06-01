@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <input type="file" id="imageInput" name="image">
+    <button id="predictButton">Predict</button>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('predictButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            var fileInput = document.getElementById('imageInput');
+            var file = fileInput.files[0];
+
+            // Convert file to base64 string
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                var imageData = event.target.result;
+
+                // Send image data as JSON
+                fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ image: imageData })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Display prediction result
+                    document.getElementById('result').innerText = JSON.stringify(data);
+                })
+                .catch(error => console.error('Error:', error));
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>

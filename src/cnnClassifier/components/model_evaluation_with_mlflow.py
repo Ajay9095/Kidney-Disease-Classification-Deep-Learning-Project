@@ -66,4 +66,6 @@ class Evaluation:
                 mlflow.keras.log_model(self.model, "model")
 
 
+
+
     
