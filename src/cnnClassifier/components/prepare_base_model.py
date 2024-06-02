@@ -35,13 +35,13 @@ class PrepareBaseModel:
 
         full_model.compile(optimizer=tf.keras.optimizers.SGD(learning_rate=learning_rate), 
                            loss=tf.keras.losses.CategoricalCrossentropy(), 
-                           metrics=["accuracy"])
+                           metrics=["accuracy"]
+                           )
 
         full_model.summary()
         return full_model
 
     def update_base_model(self):
-        self.get_base_model()
         self.full_model = self._prepare_full_model(
             model=self.model,
             classes=self.config.params_classes,

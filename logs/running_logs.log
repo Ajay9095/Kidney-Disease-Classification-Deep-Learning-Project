@@ -2759,3 +2759,864 @@ Traceback (most recent call last):
   File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
 FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model(1).h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
 [2024-06-02 02:49:37,054: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 02:49:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-02 02:51:38,067: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.4:8080]
+[2024-06-02 02:51:38,070: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-02 02:51:55,821: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 02:51:55] "GET / HTTP/1.1" 200 -]
+[2024-06-02 02:52:14,637: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join('artifacts', 'training', "model(1).h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'artifacts\training\model(1).h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2024-06-02 02:52:14,658: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 02:52:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-02 15:52:03,441: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.4:8080]
+[2024-06-02 15:52:03,443: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-02 15:52:17,851: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 15:52:17] "GET / HTTP/1.1" 200 -]
+[2024-06-02 15:52:18,025: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 15:52:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-06-02 15:52:32,562: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join('artifacts', 'training', "model(1).h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\__init__.py", line 144, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 34, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 741, in __init__
+    super().__init__(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 16, in __init__
+    super().__init__(reduction=reduction, name=name)
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 29, in __init__
+    self.reduction = standardize_reduction(reduction)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 80, in standardize_reduction
+    raise ValueError(
+ValueError: Invalid value for argument `reduction`. Expected one of {None, 'none', 'sum_over_batch_size', 'sum'}. Received: reduction=auto
+[2024-06-02 15:52:32,589: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 15:52:32] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-02 15:53:17,096: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join('artifacts', 'training', "model(1).h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\__init__.py", line 144, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 34, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 741, in __init__
+    super().__init__(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 16, in __init__
+    super().__init__(reduction=reduction, name=name)
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 29, in __init__
+    self.reduction = standardize_reduction(reduction)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 80, in standardize_reduction
+    raise ValueError(
+ValueError: Invalid value for argument `reduction`. Expected one of {None, 'none', 'sum_over_batch_size', 'sum'}. Received: reduction=auto
+[2024-06-02 15:53:17,100: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 15:53:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-02 15:56:03,146: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.4:8080]
+[2024-06-02 15:56:03,147: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-02 15:56:03,866: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 15:56:03] "GET / HTTP/1.1" 200 -]
+[2024-06-02 15:56:11,829: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 45, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join('artifacts', 'training', "model(1).h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\__init__.py", line 144, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 34, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 741, in __init__
+    super().__init__(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 16, in __init__
+    super().__init__(reduction=reduction, name=name)
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 29, in __init__
+    self.reduction = standardize_reduction(reduction)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 80, in standardize_reduction
+    raise ValueError(
+ValueError: Invalid value for argument `reduction`. Expected one of {None, 'sum_over_batch_size', 'sum', 'none'}. Received: reduction=auto
+[2024-06-02 15:56:11,862: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 15:56:11] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-02 16:00:45,203: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.4:8080]
+[2024-06-02 16:00:45,204: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-02 16:00:46,394: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 16:00:46] "GET / HTTP/1.1" 200 -]
+[2024-06-02 16:00:57,068: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 45, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join('artifacts', 'training', "model(1).h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\__init__.py", line 144, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 34, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 741, in __init__
+    super().__init__(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\losses.py", line 16, in __init__
+    super().__init__(reduction=reduction, name=name)
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 29, in __init__
+    self.reduction = standardize_reduction(reduction)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\losses\loss.py", line 80, in standardize_reduction
+    raise ValueError(
+ValueError: Invalid value for argument `reduction`. Expected one of {None, 'sum', 'sum_over_batch_size', 'none'}. Received: reduction=auto
+[2024-06-02 16:00:57,095: INFO: _internal: 127.0.0.1 - - [02/Jun/2024 16:00:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-02 23:04:29,196: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-02 23:04:29,212: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-02 23:04:29,224: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-02 23:04:29,225: INFO: common: created directory at: artifacts]
+[2024-06-02 23:04:29,226: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-02 23:04:29,227: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-02 23:04:39,842: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-02 23:04:42,326: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-02 23:04:42,327: INFO: main: ******************]
+[2024-06-02 23:04:42,327: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-02 23:04:42,334: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-02 23:04:42,339: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-02 23:04:42,340: INFO: common: created directory at: artifacts]
+[2024-06-02 23:04:42,341: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-02 23:04:43,774: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-02 23:04:45,594: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-02 23:04:46,560: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-02 23:04:46,946: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-02 23:04:46,947: INFO: main: ******************]
+[2024-06-02 23:04:46,947: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-02 23:04:46,958: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-02 23:04:46,961: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-02 23:04:46,963: INFO: common: created directory at: artifacts]
+[2024-06-02 23:04:46,965: INFO: common: created directory at: artifacts\training]
+[2024-06-02 23:04:47,824: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-02 23:04:51,506: ERROR: main: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 81, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 228, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-06-02 23:15:26,309: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-02 23:15:26,315: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-02 23:15:26,317: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-02 23:15:26,318: INFO: common: created directory at: artifacts]
+[2024-06-02 23:15:26,318: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-02 23:15:26,319: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-02 23:15:38,747: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-02 23:15:44,047: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-02 23:15:44,047: INFO: main: ******************]
+[2024-06-02 23:15:44,047: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-02 23:15:44,050: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-02 23:15:44,053: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-02 23:15:44,053: INFO: common: created directory at: artifacts]
+[2024-06-02 23:15:44,054: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-02 23:15:48,217: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-02 23:15:48,493: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-02 23:15:48,686: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-02 23:15:48,686: INFO: main: ******************]
+[2024-06-02 23:15:48,686: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-02 23:15:48,693: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-02 23:15:48,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-02 23:15:48,698: INFO: common: created directory at: artifacts]
+[2024-06-02 23:15:48,699: INFO: common: created directory at: artifacts\training]
+[2024-06-02 23:15:49,206: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-02 23:15:51,241: ERROR: main: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 81, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 228, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-06-03 00:55:06,164: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 00:55:06,185: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 00:55:06,196: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 00:55:06,197: INFO: common: created directory at: artifacts]
+[2024-06-03 00:55:06,198: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 00:55:06,199: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 00:55:17,068: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 00:55:18,934: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 00:55:18,934: INFO: main: ******************]
+[2024-06-03 00:55:18,934: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 00:55:18,940: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 00:55:18,944: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 00:55:18,945: INFO: common: created directory at: artifacts]
+[2024-06-03 00:55:18,946: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 00:55:20,090: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 00:55:20,668: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 00:55:21,003: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 00:55:21,003: INFO: main: ******************]
+[2024-06-03 00:55:21,004: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 00:55:21,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 00:55:21,018: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 00:55:21,022: INFO: common: created directory at: artifacts]
+[2024-06-03 00:55:21,024: INFO: common: created directory at: artifacts\training]
+[2024-06-03 00:55:21,847: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 00:55:21,892: ERROR: main: 'TrainingConfig' object has no attribute 'params_learning_rate']
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 15, in main
+    training.get_base_model()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 19, in get_base_model
+    self.optimizer = tf.keras.optimizers.SGD(learning_rate=self.config.params_learning_rate)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2024-06-03 01:00:21,440: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 01:00:21,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:00:21,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:00:21,448: INFO: common: created directory at: artifacts]
+[2024-06-03 01:00:21,449: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 01:00:21,450: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 01:00:32,090: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 01:00:34,134: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:00:34,134: INFO: main: ******************]
+[2024-06-03 01:00:34,135: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 01:00:34,142: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:00:34,147: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:00:34,149: INFO: common: created directory at: artifacts]
+[2024-06-03 01:00:34,149: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 01:00:35,112: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:00:35,531: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:00:35,733: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 01:00:35,733: INFO: main: ******************]
+[2024-06-03 01:00:35,734: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 01:00:35,737: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:00:35,740: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:00:35,741: INFO: common: created directory at: artifacts]
+[2024-06-03 01:00:35,742: INFO: common: created directory at: artifacts\training]
+[2024-06-03 01:00:35,742: ERROR: main: 'TrainingConfig' object has no attribute 'params_weights']
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 15, in main
+    training.get_base_model()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 18, in get_base_model
+    self.base_model_manager.get_base_model()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\prepare_base_model.py", line 15, in get_base_model
+    weights=self.config.params_weights,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_weights'. Did you mean: 'params_epochs'?
+[2024-06-03 01:02:46,829: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 01:02:46,833: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:02:46,836: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:02:46,837: INFO: common: created directory at: artifacts]
+[2024-06-03 01:02:46,837: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 01:02:46,838: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 01:03:00,423: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 01:03:10,961: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:03:10,962: INFO: main: ******************]
+[2024-06-03 01:03:10,962: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 01:03:10,966: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:03:10,969: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:03:10,970: INFO: common: created directory at: artifacts]
+[2024-06-03 01:03:10,971: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 01:03:24,323: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:03:25,781: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:03:31,430: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 01:03:31,431: INFO: main: ******************]
+[2024-06-03 01:03:31,431: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 01:03:31,443: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:03:31,449: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:03:31,451: INFO: common: created directory at: artifacts]
+[2024-06-03 01:03:31,453: INFO: common: created directory at: artifacts\training]
+[2024-06-03 01:03:31,517: ERROR: main: 'Training' object has no attribute 'model']
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 88, in train
+    self.model.compile(optimizer=self.optimizer,
+    ^^^^^^^^^^
+AttributeError: 'Training' object has no attribute 'model'
+[2024-06-03 01:04:57,585: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 01:04:57,589: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:04:57,592: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:04:57,593: INFO: common: created directory at: artifacts]
+[2024-06-03 01:04:57,594: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 01:04:57,594: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 01:05:07,882: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 01:05:09,846: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:05:09,846: INFO: main: ******************]
+[2024-06-03 01:05:09,847: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 01:05:09,852: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:05:09,860: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:05:09,863: INFO: common: created directory at: artifacts]
+[2024-06-03 01:05:09,864: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 01:05:10,704: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:05:11,287: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:05:11,453: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 01:05:11,453: INFO: main: ******************]
+[2024-06-03 01:05:11,453: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 01:05:11,458: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:05:11,460: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:05:11,461: INFO: common: created directory at: artifacts]
+[2024-06-03 01:05:11,462: INFO: common: created directory at: artifacts\training]
+[2024-06-03 01:05:11,890: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:05:27,043: ERROR: main: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 93, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>
+[2024-06-03 01:20:25,996: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 01:20:26,000: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:20:26,003: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:20:26,004: INFO: common: created directory at: artifacts]
+[2024-06-03 01:20:26,005: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 01:20:26,006: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 01:20:36,499: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 01:20:38,079: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:20:38,079: INFO: main: ******************]
+[2024-06-03 01:20:38,080: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 01:20:38,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:20:38,089: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:20:38,090: INFO: common: created directory at: artifacts]
+[2024-06-03 01:20:38,091: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 01:20:39,139: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:20:39,391: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:20:39,559: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 01:20:39,560: INFO: main: ******************]
+[2024-06-03 01:20:39,560: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 01:20:39,563: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:20:39,565: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:20:39,566: INFO: common: created directory at: artifacts]
+[2024-06-03 01:20:39,568: INFO: common: created directory at: artifacts\training]
+[2024-06-03 01:20:39,945: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:21:02,054: ERROR: main: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 84, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>
+[2024-06-03 01:24:27,870: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 01:24:27,875: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:24:27,878: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:24:27,878: INFO: common: created directory at: artifacts]
+[2024-06-03 01:24:27,879: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 01:24:27,880: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 01:24:38,324: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 01:24:39,866: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:24:39,871: INFO: main: ******************]
+[2024-06-03 01:24:39,886: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 01:24:39,910: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:24:40,010: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:24:40,057: INFO: common: created directory at: artifacts]
+[2024-06-03 01:24:40,097: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 01:24:41,816: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:24:42,155: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:24:42,448: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 01:24:42,450: INFO: main: ******************]
+[2024-06-03 01:24:42,451: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 01:24:42,458: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:24:42,464: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:24:42,467: INFO: common: created directory at: artifacts]
+[2024-06-03 01:24:42,468: INFO: common: created directory at: artifacts\training]
+[2024-06-03 01:24:43,083: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:27:17,396: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:27:17,576: INFO: main: >>>>>> stage model training completed <<<<<<<
+
+x========x]
+[2024-06-03 01:27:17,577: INFO: main: ******************]
+[2024-06-03 01:27:17,578: INFO: main: >>>>>> stage Evaluation Stage started <<<<<<<]
+[2024-06-03 01:27:17,583: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:27:17,587: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:27:17,592: INFO: common: created directory at: artifacts]
+[2024-06-03 01:27:18,160: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:28:17,026: INFO: common: json file saved at: scores.json]
+[2024-06-03 01:28:17,032: INFO: common: json file saved at: scores.json]
+[2024-06-03 01:28:51,701: INFO: main: >>>>>> stage Evaluation Stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:32:44,654: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-06-03 01:32:44,657: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-03 01:32:45,733: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 01:32:45] "GET / HTTP/1.1" 200 -]
+[2024-06-03 01:32:55,147: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:32:58,255: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 01:32:58] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 01:33:14,030: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:33:15,870: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 01:33:15] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 01:51:25,799: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 01:51:25,805: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:51:25,807: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:51:25,808: INFO: common: created directory at: artifacts]
+[2024-06-03 01:51:25,809: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 01:51:25,810: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 01:51:37,095: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 01:51:38,830: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 01:51:38,830: INFO: main: ******************]
+[2024-06-03 01:51:38,831: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 01:51:38,851: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:51:38,868: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:51:38,869: INFO: common: created directory at: artifacts]
+[2024-06-03 01:51:38,870: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 01:51:39,967: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:51:40,433: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 01:51:40,616: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 01:51:40,616: INFO: main: ******************]
+[2024-06-03 01:51:40,617: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 01:51:40,624: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 01:51:40,629: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 01:51:40,631: INFO: common: created directory at: artifacts]
+[2024-06-03 01:51:40,632: INFO: common: created directory at: artifacts\training]
+[2024-06-03 01:51:41,081: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 01:51:59,843: ERROR: main: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_training.py", line 84, in train
+    self.model.fit(
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2501' in position 21: character maps to <undefined>
+[2024-06-03 02:03:47,810: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-06-03 02:03:47,820: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-03 02:03:48,431: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:03:48] "GET / HTTP/1.1" 200 -]
+[2024-06-03 02:04:01,739: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\Desktop\kidney_project\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 45, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\ajay kumar\desktop\kidney_project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join('artifacts', 'training', "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AJAY KUMAR\anaconda3\envs\kidney\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'artifacts\training\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2024-06-03 02:04:01,797: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:04:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-06-03 02:05:22,016: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 02:05:22,023: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:05:22,026: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:05:22,028: INFO: common: created directory at: artifacts]
+[2024-06-03 02:05:22,030: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 02:05:22,031: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 02:05:32,665: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 02:05:34,532: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 02:05:34,535: INFO: main: ******************]
+[2024-06-03 02:05:34,536: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 02:05:34,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:05:34,562: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:05:34,575: INFO: common: created directory at: artifacts]
+[2024-06-03 02:05:34,659: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 02:05:36,218: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 02:05:36,669: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 02:05:37,114: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 02:05:37,116: INFO: main: ******************]
+[2024-06-03 02:05:37,117: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 02:05:37,123: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:05:37,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:05:37,129: INFO: common: created directory at: artifacts]
+[2024-06-03 02:05:37,135: INFO: common: created directory at: artifacts\training]
+[2024-06-03 02:05:37,600: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:08:07,540: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 02:08:07,890: INFO: main: >>>>>> stage model training completed <<<<<<<
+
+x========x]
+[2024-06-03 02:08:07,893: INFO: main: ******************]
+[2024-06-03 02:08:07,895: INFO: main: >>>>>> stage Evaluation Stage started <<<<<<<]
+[2024-06-03 02:08:07,909: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:08:07,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:08:07,932: INFO: common: created directory at: artifacts]
+[2024-06-03 02:08:08,406: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:08:52,551: INFO: common: json file saved at: scores.json]
+[2024-06-03 02:08:52,554: INFO: common: json file saved at: scores.json]
+[2024-06-03 02:09:49,314: INFO: main: >>>>>> stage Evaluation Stage completed <<<<<<<
+
+x========x]
+[2024-06-03 02:14:14,709: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 02:14:14,714: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:14:14,753: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:14:14,756: INFO: common: created directory at: artifacts]
+[2024-06-03 02:14:14,761: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 02:14:14,766: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 02:14:25,827: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 02:14:27,584: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 02:14:27,585: INFO: main: ******************]
+[2024-06-03 02:14:27,586: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-03 02:14:27,594: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:14:27,599: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:14:27,601: INFO: common: created directory at: artifacts]
+[2024-06-03 02:14:27,635: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-03 02:14:28,996: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 02:14:29,413: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 02:14:29,765: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-03 02:14:29,767: INFO: main: ******************]
+[2024-06-03 02:14:29,767: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-03 02:14:29,771: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:14:29,777: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:14:29,778: INFO: common: created directory at: artifacts]
+[2024-06-03 02:14:29,780: INFO: common: created directory at: artifacts\training]
+[2024-06-03 02:14:30,500: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:19:28,936: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-03 02:19:29,183: INFO: main: >>>>>> stage model training completed <<<<<<<
+
+x========x]
+[2024-06-03 02:19:29,185: INFO: main: ******************]
+[2024-06-03 02:19:29,185: INFO: main: >>>>>> stage Evaluation Stage started <<<<<<<]
+[2024-06-03 02:19:29,191: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:19:29,197: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:19:29,199: INFO: common: created directory at: artifacts]
+[2024-06-03 02:19:29,696: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:20:11,910: INFO: common: json file saved at: scores.json]
+[2024-06-03 02:20:11,913: INFO: common: json file saved at: scores.json]
+[2024-06-03 02:21:05,137: INFO: main: >>>>>> stage Evaluation Stage completed <<<<<<<
+
+x========x]
+[2024-06-03 02:22:50,453: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-06-03 02:22:50,454: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-03 02:22:51,045: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:22:51] "GET / HTTP/1.1" 200 -]
+[2024-06-03 02:23:05,814: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:23:07,900: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:23:07] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 02:23:34,857: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:23:36,548: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:23:36] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 02:23:51,047: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:23:52,930: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:23:52] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 02:24:00,267: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:24:01,922: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:24:01] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 02:24:21,089: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-03 02:24:22,779: WARNING: polymorphic_function: 5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000002056E21AFC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-06-03 02:24:22,787: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:24:22] "POST /predict HTTP/1.1" 200 -]
+[2024-06-03 02:24:49,191: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 02:24:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-06-03 02:36:37,210: INFO: stage_01_data_ingestion: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 02:36:37,214: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:36:37,217: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:36:37,218: INFO: common: created directory at: artifacts]
+[2024-06-03 02:36:37,220: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 02:36:37,221: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 02:36:48,173: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 02:36:50,752: INFO: stage_01_data_ingestion: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-03 02:39:28,054: INFO: stage_01_data_ingestion: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-03 02:39:28,059: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-03 02:39:28,062: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-03 02:39:28,063: INFO: common: created directory at: artifacts]
+[2024-06-03 02:39:28,065: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-03 02:39:28,066: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-03 02:39:38,813: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-03 02:39:40,545: INFO: stage_01_data_ingestion: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]

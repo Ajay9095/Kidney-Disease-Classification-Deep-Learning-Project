@@ -8,10 +8,10 @@ import io
 import logging
 
 # Set up logging to handle UTF-8
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler(sys.stdout)])
-logger = logging.getLogger()
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler(sys.stdout)])
+# logger = logging.getLogger()
+# sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+# sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 
 STAGE_NAME = " Data Ingestion stage"
@@ -58,8 +58,8 @@ STAGE_NAME = "Evaluation Stage"
 try:
     logger.info(f"******************")
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<<")
-    obj = EvaluationPipeline()
-    obj.main()
+    model_evalution = EvaluationPipeline()
+    model_evalution.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<<\n\nx========x")
 except Exception as e:
     logger.exception(e)

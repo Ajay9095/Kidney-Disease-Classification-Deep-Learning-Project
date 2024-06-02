@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import os
 from flask_cors import CORS, cross_origin
 from cnnClassifier.utils.common import decodeImage
+import webbrowser
 from cnnClassifier.pipeline.prediction import PredictionPipeline
 
 
@@ -47,5 +48,6 @@ def predictRoute():
 
 if __name__ == "__main__":
     clApp = ClientApp()
-
+    webbrowser.open('http://localhost:8080')
     app.run(host='0.0.0.0', port=8080) 
+    

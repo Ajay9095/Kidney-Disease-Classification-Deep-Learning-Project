@@ -5,6 +5,7 @@ import tensorflow as tf
 import time
 from pathlib import Path
 from cnnClassifier.entity.config_entity import TrainingConfig
+from cnnClassifier.components.prepare_base_model import PrepareBaseModel
 
 
 class Training:
@@ -12,9 +13,12 @@ class Training:
         self.config = config
 
     def get_base_model(self):
+
         self.model = tf.keras.models.load_model(
             self.config.updated_base_model_path
         )
+
+        self.optimizer = tf.keras.optimizers.SGD(learning_rate=0.01) 
 
     def train_valid_generator(self):
 
@@ -71,12 +75,11 @@ class Training:
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
 
-        # Create a new optimizer instance
-        optimizer = tf.keras.optimizers.Adam()
 
-        # Compile the model with the new optimizer
-        self.model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
-        
+        self.model.compile(optimizer=self.optimizer,
+                           loss=tf.keras.losses.CategoricalCrossentropy(),
+                           metrics=["accuracy"]
+                           )
 
         self.model.fit(
             self.train_generator,
@@ -86,6 +89,8 @@ class Training:
             validation_data=self.valid_generator
 
         )
+
+        print("Training completed successfully.".encode('utf-8'))
 
         self.save_model(
             path=self.config.trained_mode_path,
