@@ -1,6 +1,5 @@
-tensorflow==2.16.1
+tensorflow==2.13.1
 pandas
-dvc
 mlflow==2.12.2
 notebook
 numpy

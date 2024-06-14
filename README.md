@@ -116,7 +116,7 @@ MLflow
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 058264500284.dkr.ecr.eu-north-1.amazonaws.com/kidney
+    - Save the URI: 058264500284.dkr.ecr.eu-north-1.amazonaws.com/kidney-disease-classification
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -150,7 +150,7 @@ MLflow
 
     AWS_SECRET_ACCESS_KEY=
 
-    AWS_REGION = us-east-1
+    AWS_REGION = eu-north-1
 
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 

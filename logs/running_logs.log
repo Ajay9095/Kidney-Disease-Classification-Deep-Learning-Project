@@ -3817,3 +3817,13 @@ x========x]
 [2024-06-14 02:08:46,424: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 02:08:46] "POST /predict HTTP/1.1" 200 -]
 [2024-06-14 02:08:58,230: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2024-06-14 02:09:00,121: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 02:09:00] "POST /predict HTTP/1.1" 200 -]
+[2024-06-14 21:13:50,633: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.6:8080]
+[2024-06-14 21:13:50,644: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-14 21:13:52,991: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 21:13:52] "GET / HTTP/1.1" 200 -]
+[2024-06-14 21:14:08,952: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 21:14:12,242: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 21:14:12] "POST /predict HTTP/1.1" 200 -]
+[2024-06-14 21:14:26,950: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 21:14:28,990: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 21:14:28] "POST /predict HTTP/1.1" 200 -]
