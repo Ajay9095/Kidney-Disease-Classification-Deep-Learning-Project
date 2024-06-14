@@ -3677,3 +3677,143 @@ x========x]
 [2024-06-03 21:58:32,820: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 21:58:32] "POST /predict HTTP/1.1" 200 -]
 [2024-06-03 21:58:43,973: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2024-06-03 21:58:46,024: INFO: _internal: 127.0.0.1 - - [03/Jun/2024 21:58:46] "POST /predict HTTP/1.1" 200 -]
+[2024-06-04 22:12:14,374: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-04 22:12:14,394: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:12:14,413: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:12:14,414: INFO: common: created directory at: artifacts]
+[2024-06-04 22:12:14,415: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-04 22:12:14,416: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-04 22:12:25,256: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-04 22:12:27,200: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-04 22:12:27,204: INFO: main: ******************]
+[2024-06-04 22:12:27,205: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-04 22:12:27,210: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:12:27,213: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:12:27,229: INFO: common: created directory at: artifacts]
+[2024-06-04 22:12:27,231: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-04 22:12:29,283: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-04 22:12:31,080: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-04 22:12:31,531: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-04 22:12:31,532: INFO: main: ******************]
+[2024-06-04 22:12:31,533: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-04 22:12:31,539: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:12:31,545: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:12:31,547: INFO: common: created directory at: artifacts]
+[2024-06-04 22:12:31,550: INFO: common: created directory at: artifacts\training]
+[2024-06-04 22:12:32,118: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-04 22:29:57,071: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-04 22:29:57,076: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:29:57,099: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:29:57,101: INFO: common: created directory at: artifacts]
+[2024-06-04 22:29:57,108: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-04 22:29:57,109: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-04 22:30:07,726: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-04 22:30:09,356: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-04 22:30:09,361: INFO: main: ******************]
+[2024-06-04 22:30:09,362: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-04 22:30:09,371: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:30:09,378: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:30:09,382: INFO: common: created directory at: artifacts]
+[2024-06-04 22:30:09,403: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-04 22:30:10,550: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-04 22:30:10,973: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-04 22:30:11,359: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-04 22:30:11,360: INFO: main: ******************]
+[2024-06-04 22:30:11,361: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-04 22:30:11,367: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:30:11,372: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:30:11,374: INFO: common: created directory at: artifacts]
+[2024-06-04 22:30:11,376: INFO: common: created directory at: artifacts\training]
+[2024-06-04 22:30:11,832: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-04 22:51:53,511: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-04 22:51:54,070: INFO: main: >>>>>> stage model training completed <<<<<<<
+
+x========x]
+[2024-06-04 22:51:54,072: INFO: main: ******************]
+[2024-06-04 22:51:54,074: INFO: main: >>>>>> stage Evaluation Stage started <<<<<<<]
+[2024-06-04 22:51:54,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-04 22:51:54,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-04 22:51:54,134: INFO: common: created directory at: artifacts]
+[2024-06-04 22:51:54,983: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-04 22:52:48,711: INFO: common: json file saved at: scores.json]
+[2024-06-04 22:52:48,719: INFO: common: json file saved at: scores.json]
+[2024-06-04 22:53:23,972: INFO: main: >>>>>> stage Evaluation Stage completed <<<<<<<
+
+x========x]
+[2024-06-04 22:54:26,111: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2024-06-04 22:54:26,113: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-04 22:54:27,588: INFO: _internal: 127.0.0.1 - - [04/Jun/2024 22:54:27] "GET / HTTP/1.1" 200 -]
+[2024-06-04 22:54:50,596: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-04 22:54:52,695: INFO: _internal: 127.0.0.1 - - [04/Jun/2024 22:54:52] "POST /predict HTTP/1.1" 200 -]
+[2024-06-04 22:55:03,674: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-04 22:55:05,432: INFO: _internal: 127.0.0.1 - - [04/Jun/2024 22:55:05] "POST /predict HTTP/1.1" 200 -]
+[2024-06-05 02:10:00,091: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2024-06-05 02:10:00,095: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-05 02:10:02,422: INFO: _internal: 127.0.0.1 - - [05/Jun/2024 02:10:02] "GET / HTTP/1.1" 200 -]
+[2024-06-14 01:44:10,291: INFO: main: >>>>>> stage  Data Ingestion stage started <<<<<<<]
+[2024-06-14 01:44:10,317: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-14 01:44:10,332: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 01:44:10,333: INFO: common: created directory at: artifacts]
+[2024-06-14 01:44:10,335: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 01:44:10,336: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into the artifacts/data_ingestion/data.zip]
+[2024-06-14 01:44:21,093: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1aOA1AS9SuElVxdJHE48GFLCNRsDXBwpY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 01:44:23,605: INFO: main: >>>>>> stage  Data Ingestion stage completed <<<<<<<
+
+x========x]
+[2024-06-14 01:44:23,608: INFO: main: ******************]
+[2024-06-14 01:44:23,609: INFO: main: >>>>>> stage Prepare base model started <<<<<<<]
+[2024-06-14 01:44:23,618: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-14 01:44:23,626: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 01:44:23,653: INFO: common: created directory at: artifacts]
+[2024-06-14 01:44:23,660: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 01:44:25,556: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-14 01:44:26,262: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-14 01:44:26,568: INFO: main: >>>>>> stage Prepare base model completed <<<<<<<
+
+x========x]
+[2024-06-14 01:44:26,570: INFO: main: ******************]
+[2024-06-14 01:44:26,571: INFO: main: >>>>>> stage model training started <<<<<<<]
+[2024-06-14 01:44:26,578: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-14 01:44:26,584: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 01:44:26,587: INFO: common: created directory at: artifacts]
+[2024-06-14 01:44:26,592: INFO: common: created directory at: artifacts\training]
+[2024-06-14 01:44:28,536: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 02:05:10,554: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-14 02:05:10,974: INFO: main: >>>>>> stage model training completed <<<<<<<
+
+x========x]
+[2024-06-14 02:05:10,976: INFO: main: ******************]
+[2024-06-14 02:05:10,978: INFO: main: >>>>>> stage Evaluation Stage started <<<<<<<]
+[2024-06-14 02:05:11,028: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-14 02:05:11,045: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 02:05:11,050: INFO: common: created directory at: artifacts]
+[2024-06-14 02:05:11,699: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 02:05:54,950: INFO: common: json file saved at: scores.json]
+[2024-06-14 02:05:54,960: INFO: common: json file saved at: scores.json]
+[2024-06-14 02:06:55,027: INFO: main: >>>>>> stage Evaluation Stage completed <<<<<<<
+
+x========x]
+[2024-06-14 02:08:16,412: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.8:8080]
+[2024-06-14 02:08:16,414: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-14 02:08:17,360: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 02:08:17] "GET / HTTP/1.1" 200 -]
+[2024-06-14 02:08:44,101: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 02:08:46,424: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 02:08:46] "POST /predict HTTP/1.1" 200 -]
+[2024-06-14 02:08:58,230: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 02:09:00,121: INFO: _internal: 127.0.0.1 - - [14/Jun/2024 02:09:00] "POST /predict HTTP/1.1" 200 -]
